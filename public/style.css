@@ -1,0 +1,156 @@
+/* Default styles for all screens (mobile-first) */
+
+.top-container {
+    background-color: #e4f9f5;
+    position: relative;
+    padding-top: 100px;
+}
+
+.top-cloud {
+    position: absolute;
+    right: 0; /* Adjust cloud position for smaller screens */
+    top: 0; /* Adjust cloud position for smaller screens */
+}
+
+body {
+    color: #40514e;
+    margin: 0;
+    text-align: center;
+    font-family: "Merriweather", serif;
+}
+
+div {
+    display: block;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+h1 {
+    color: #66bfbf;
+    font-size: 4rem; /* Decrease font size for smaller screens */
+    margin: 20px auto 0 auto; /* Adjust margin for smaller screens */
+    font-family: "Sacramento", cursive;
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 0; /* Adjust cloud position for smaller screens */
+    top: 200px; /* Adjust cloud position for smaller screens */
+}
+
+.middle-container {
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+h2 {
+    font-size: 1.5rem; /* Decrease font size for smaller screens */
+    color: #66bfbf;
+    font-weight: normal;
+}
+
+.intro {
+    font-size: 1rem; /* Decrease font size for smaller screens */
+    font-weight: normal;
+}
+
+.line {
+    text-decoration: underline;
+}
+
+hr {
+    border: dotted #eaf6f6 2px; /* Decrease border thickness for smaller screens */
+    border-bottom: none;
+    width: 20%;
+    margin: 20px auto; /* Adjust margin for smaller screens */
+}
+
+p.skill {
+    text-align: left;
+    font-size: 1rem; /* Decrease font size for smaller screens */
+    font-weight: normal;
+    list-style: none;
+}
+
+.btn {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-size: 16px; /* Decrease button font size for smaller screens */
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block; /* Ensure button fits on smaller screens */
+    margin-top: 20px; /* Add spacing below button for smaller screens */
+}
+
+a {
+    color: #11999e;
+    font-family: "Montserrat", sans-serif;
+    margin: 10px 0; /* Adjust margin for smaller screens */
+    text-decoration: none;
+}
+
+.bottom-container {
+    background-color: #66bfbf;
+    padding: 50px 0 20px;
+    gap: 10px;
+}
+
+.contact-me {
+    margin-bottom: 20px; /* Adjust margin for smaller screens */
+}
+
+/* Media query for screens larger than 768px (tablets and up) */
+@media (min-width: 768px) {
+    .top-cloud {
+        right: 300px; /* Restore cloud position for larger screens */
+        top: 30px; /* Restore cloud position for larger screens */
+    }
+
+    .bottom-cloud {
+        left: 250px; /* Restore cloud position for larger screens */
+        top: 300px; /* Restore cloud position for larger screens */
+    }
+
+    h1 {
+        font-size: 5.625rem; /* Increase font size for larger screens */
+        margin: 50px auto 0 auto; /* Restore margin for larger screens */
+    }
+
+    .btn {
+        font-size: 20px; /* Increase button font size for larger screens */
+        margin-top: 40px; /* Increase spacing below button for larger screens */
+    }
+}
+
+/* Media query for screens larger than 1200px (desktops) */
+@media (min-width: 1200px) {
+    .top-cloud {
+        right: 500px; /* Further adjust cloud position for larger screens */
+    }
+
+    .bottom-cloud {
+        left: 400px; /* Further adjust cloud position for larger screens */
+    }
+
+    h1 {
+        font-size: 6rem; /* Further increase font size for larger screens */
+    }
+
+    .btn {
+        font-size: 24px; /* Further increase button font size for larger screens */
+        margin-top: 60px; /* Further increase spacing below button for larger screens */
+    }
+}
